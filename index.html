@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialize : Home Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar">
+    <img src="img/logo.webp" class="logo" alt="Logo">
+    <form class="search-box">
+        <input type="text" placeholder="search" name="search-query" id="search-input">
+        <button class="search-btn" type="submit"><img src="img/icon/search.png" class="search-icon" alt="Search Icon"></button>
+    </form>
+    <div class="nav-links">
+        <a href="#" class="nav-link"><img src="img/icon/home-fill.png" class="nav-icon" alt="Home Icon"></a>
+        <div class="activity-log">
+            <img src="img/icon/heart-nofill.png" class="nav-icon" alt="Activity Icon">
+            <div class="activity-container hide">
+                <div class="activity-card">
+                    <img src="img/user1.jpg" class="user-img" alt="User Image">
+                    <p class="activity"><b>@siri</b> liked your post</p>
+                    <img src="img/posts/post1.png" class="activity-post" alt="Post Image">
+                </div>
+                <!-- Repeat for other activities -->
+            </div>
+        </div>
+        <a href="#" class="nav-link"><img src="img/icon/add-nofill.png" class="nav-icon" alt="Add Icon"></a>
+        <a href="#" class="nav-link"><img src="img/user1.jpg" class="nav-icon user-profile" alt="Profile Image"></a>
+    </div>
+</nav>
+
+<!-- main section -->
+<section class="main">
+    <!-- post section -->
+    <div class="post-container">
+        <div class="post">
+            <div class="post-header">
+                <img src="img/user2.jpg" class="user-icon" alt="User Icon">
+                <p class="username">@fierzone</p>
+            </div>
+            <div class="post-feed">
+                <div class="post-overlays">
+                    <img src="img/icon/red-heart.png" class="like-icon" alt="Like Icon">
+                    <div class="share-window">
+                        <h1 class="title">Share the post with others</h1>
+                        <div class="share-link-container">
+                            <input type="text" id="share-link" value="https://www.socialize.com/post/234234234234" disabled>
+                            <button class="copy-btn">Copy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-img-container">
+                    <img src="img/posts/post1.png" alt="Post Image">
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <div class="post-detail">
+                <div class="detail-intracables">
+                    <img src="img/icon/heart-nofill.png" class="like-btn" alt="Like Button">
+                    <img src="img/icon/send-nofill.png" class="send-btn" alt="Send Button">
+                    <img src="img/icon/comment-nofill.png" class="comment-btn" alt="Comment Button">
+                </div>
+                <span class="likes">2.7k likes</span>
+                <p class="username">@fierzone</p>
+                <p class="post-des">.......</p>
+                <div class="comment-box">
+                    <input type="text" id="comment-input" placeholder="Add a comment">
+                    <button class="add-comment-btn"><img src="img/icon/comment-nofill.png" alt="Comment Icon"></button>
+                </div>
+                <span class="comment-count">300 comments</span>
+            </div>
+        </div>
+        <!-- Repeat for other posts -->
+    </div>
+
+    <!-- right section -->
+    <div class="user-about-section">
+        <div class="user-info">
+            <img src="user1.jpg" class="user-dp" alt="User Profile">
+            <div class="info-container">
+                <h1 class="name">FierZone</h1>
+                <p>L</p>
+            </div>
+        </div>
+        <h1 class="suggestion-heading">Suggestions</h1>
+        <div class="suggestion-container">
+            <div class="user-card">
+                <img src="img/user1.jpg" class="user-dp" alt="User DP">
+                <p class="username">@john</p>
+                <button class="follow-btn">Follow</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/post.js"></script>
+
+</body>
+</html>
